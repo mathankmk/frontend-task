@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Frontend Task | Home</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- start: newsletter section -->
+      <section class="newsletter">
+        <div class="p--x80">
+          <h2 class="newsletter__head m--0">Spread the word!</h2>
+          <p class="newsletter__description m--0">
+            Our recipes are awesome, sign up to our newsletter and invite
+            friends to join the Gilled Prawn cult
+          </p>
+          <form>
+            <div id="newsletter__form">
+              <div class="newsletter__loading" id="newsletterloading">
+                Loading...
+              </div>
+            </div>
+            <div class="newsletter__sendcontent">
+              <button
+                class="newsletter__sendbtn"
+                type="button"
+                onClick="sendFormData()"
+              >
+                Send
+                <img
+                  alt="Frontend Task - send"
+                  class="newsletter__sendimg"
+                  src="assets/Images/arrow_right.png"
+                />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- end: newsletter section -->
+    </main>
+    <script src="assets/js/default.js"></script>
+  </body>
+</html>
