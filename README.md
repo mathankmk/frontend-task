@@ -6,7 +6,7 @@
 
 1.Directly open the index.html file
 
-    OR
+OR
 
 #### Run in localhost:
 
