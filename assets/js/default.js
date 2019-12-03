@@ -5,7 +5,7 @@ let entryLimit = 5; // Entery limit to form fields
 const formHtml = random => ` <div class="d--flex newsletter__content">
 <div class="newsletter__item ">
     <label class="newsletter__label" for="name__${random}">Name</label>
-    <input class="newsletter__input newsletter__name" id="name__${random}" type="text" maxlength="50"/>
+    <input class="newsletter__input newsletter__name" id="name__${random}" type="text" maxlength="50"/> 
     <p class="name__${random} newsletter__error"></p>
 </div>
 <div class="newsletter__item">
@@ -19,11 +19,11 @@ const formHtml = random => ` <div class="d--flex newsletter__content">
     <p class="email__${random} newsletter__error"></p>
 </div>
 <div class="newsletter__item d--flex newsletter__removecontent hide">
-    <div onClick="removeFriend(${random})" class="d--flex"><img class="newsletter__remove" alt="The Grilled Prawn - remove image" src="assets/images/delete.png" />
+    <div onClick="removeFriend(${random})" class="d--flex newsletter__removeinner" tabindex="0"><img class="newsletter__remove" alt="Frontend task - remove image" src="assets/images/delete.png"  aria-hidden="true"/>
     <span class="cursor--ptr newsletter__removetext" >Remove</span></div>
 </div>
-<div class="newsletter__item d--flex  newsletter__addcontent">
-    <button type="button" class="newsletter__addfrd" onClick="addFriend()"> Add Friend</button>
+<div class="newsletter__item d--flex  newsletter__addcontent" >
+    <button class="newsletter__addfrd" type="button" onClick="addFriend()" >Add Friend</button>
 </div>
 </div>`;
 

@@ -142,7 +142,22 @@ button {
   margin-bottom: 20px;
 }
 .newsletter__removecontent {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.newsletter__addfrd:focus {
+  border: 1px solid #655f5f;
+}
+.newsletter__sendbtn:focus {
+  border: 1px solid #060606;
+}
+.newsletter__removeinner {
+  padding: 15px 10px 0px 10px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.newsletter__removeinner:focus {
+  outline: none;
+  border: 1px solid #655f5f;
 }
 /* end: newsleeter css */
 
@@ -178,7 +193,7 @@ button {
     margin-top: 10px;
   }
   .newsletter__removecontent {
-    margin-top: 38.5px;
+    margin-top: 23.5px;
   }
   #newsletter__form {
     display: flex;
@@ -188,7 +203,9 @@ button {
 }
 
 @media (max-width: 575.98px) {
-  .newsletter__input {
+  .newsletter__input,
+  .newsletter__input:focus {
     margin: 0px;
+    width: 250px;
   }
 }
